@@ -1,4 +1,4 @@
-const util = require('util');
+﻿const util = require('util');
 
 const fs = require('fs-extra');
 
@@ -14,7 +14,7 @@ const s = require(__dirname + "/../set");
 
 
 
-zokou({ nomCom: "list", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
 
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
 
@@ -66,25 +66,27 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 
-┏❏ ⌜  ❛♤LUCK-MD♤❜ ⌟ ❐
-┃ ⿻𝕄𝕠𝕕𝕖: ${mode}
-┃ ⿻𝕌𝕤𝕖𝕣 : ${s.OWNER_NAME}
-┃ ⿻𝕃𝕚𝕓𝕣𝕒𝕣𝕪 : Baileys
-️┃ ⿻ℙ𝕣𝕖𝕗𝕚𝕩 : ${s.PREFIXE}
-️┃ ⿻𝔻𝕒𝕥𝕖 : ${date}
-┃ ⿻𝕋𝕚𝕞𝕖 : ${temps}
-┃ ⿻𝕋𝕠𝕠𝕝𝕤 : ${cm.length}
-┃ ⿻ℝ𝕒𝕞 : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-┃ ⿻ℍ𝕠𝕤𝕥 : ${os.platform()}
-┗❏\n\n`;
+╭──━━━━══════━━━━༃
+┃ ━━℘ *℘LUCK MD℘* ℘━━
+┃ ༃𝕄𝕠𝕕𝕖: ${mode}
+┃ ༃𝕌𝕤𝕖𝕣 : ${s.OWNER_NAME}
+┃ ༃𝕃𝕚𝕓𝕣𝕒𝕣𝕪 : Baileys
+┃ ༃ℙ𝕣𝕖𝕗𝕚𝕩 : ${s.PREFIXE}
+┃ ༃𝔻𝕒𝕥𝕖 : ${date}
+┃ ༃𝕋𝕚𝕞𝕖 : ${temps}
+┃ ༃𝕋𝕠𝕠𝕝𝕤 : ${cm.length}
+┃ ༃ℝ𝕒𝕞 : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┃ ✯༃ℍ𝕠𝕤𝕥 : ${os.platform()}
+┃ ༃━━━━═════━━━━༃
+╰──━━━━══════━━━━༃\n\n`;
 
 
     
 
 let menuMsg = `
-> ┏━━━━━━━━━┓
-> ┣➠LUCK cmds
-> ┗━━━━━━━━━┛\n
+┏━━══════━━┓
+┃▓༃ _*SASAKI FAMILY*_
+┗━━══════━━┛\n
 
 
 `;
@@ -93,17 +95,17 @@ let menuMsg = `
 
     for (const cat in coms) {
 
-        menuMsg += `┏❏ *${cat}*`;
+        menuMsg += `╭─━━═━༃ _*${cat}*_ ༃━═━━─⊷`;
 
         for (const cmd of coms[cat]) {
-
+            
             menuMsg += `
-┃  ๛ _*${cmd}*_`;
+┃℘ ${cmd}`;
 
         }
 
         menuMsg += `
-┗❏\n`
+╰─━━━━══════━━━━༃\n`
 
     }
 
@@ -112,13 +114,13 @@ let menuMsg = `
     menuMsg += `
 
 
-> ┏━━━━━━━━━━━━━━┓
-> ┣➠⚚LUCK-MD⚚ ©2024
-> ┣➠Enjoy life  
-> ┗┳━━━━━━━━━━━━┳┛
-> ┏┻━━━━━━━━━━━━┻┓
-> ┃➠powered by SASAKI-FAMILY
-> ┗━━━━━━━━━━━━━━┛\n
+ ╭──━━══════━━━━┓
+ ┃༃ _*LUCK MD*_
+ ┃༃ _*LUCK MD*_ 
+ ╰──━━══════━━━┳┛
+ ╭──━━══════━━━┻┓
+ ┃℘ _*LUCK 𖣘SASAKI FAMILY℘*_
+ ╰──━━══════━━━━┛\n
 
 
 `;
@@ -133,7 +135,7 @@ let menuMsg = `
 
     try {
 
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *LUCK-BOT*, déveloper Arthur" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *LUCK-BOT*, déveloper ARTHUR SASAKI" , gifPlayback : true }, { quoted: ms });
 
     }
 
@@ -153,7 +155,7 @@ else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
 
     try {
 
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *LUCK-bot*, déveloper ARTHUR" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *LUCK-bot*, déveloper LUCK" }, { quoted: ms });
 
     }
 

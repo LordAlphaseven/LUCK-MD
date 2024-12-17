@@ -2,7 +2,7 @@
 </p>
 <p align="center">
   <a href="https://whatsapp.com/channel/0029Vajrhmz96H4IsEjh4a41">
-    <img alt=Support height="350" src="https://i.ibb.co/J5wKgmR/f29ce0348140fb43.jpg"> 
+    <img alt=Support height="350" src="https://i.ibb.co/Y3V6LVn/2a7c9dac44ff0e9f.jpg"> 
     </p>
 <h1 align="center">    LUCK-MULTI-DEVICE (BETA)
 </h1>
@@ -50,7 +50,15 @@
 <a href='https://github.com/LordAlphaseven/LUCK-MD/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork This Repo-Blue?style=for-the-badge&logo=git&logoColor=white'/></a>
 
 ### 2. SESSION-ID CODE
-<a 'https'https://david-session-1-ob9t.onrender.com'http?v=1' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Scan Qr code-black?style=for-the-badge&logo=opencv&logoColor=white'/></a>
+<a href='https://david-session-1-ob9t.onrender.com?v=1' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Scan Qr code-Blue?style=for-the-badge&logo=opencv&logoColor=white'/></a>
+
+
+
+
+
+
+
+
 
 
 
